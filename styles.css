@@ -1,27 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
-    display: flex;
-    justify-content: center;
     font-family: "Roboto", sans-serif;
     margin: 0px;
     min-height: 100vh;
-}
-
-.main-content {
     display: flex;
     flex-direction: column;
-    width: 1200px;
-}
-
-.padding-left,
-.padding-right {
-    flex: 0 1 auto;
 }
 
 /* Header */
 
-.header-section {
+.header-content {
     background-color: #1F2937;
     display: flex;
     align-items: center;
@@ -57,7 +46,7 @@ body {
 
 /* Hero */
 
-.hero-section {
+.hero-content {
     display: flex;
     background-color: #1F2937;
 }
@@ -101,6 +90,10 @@ body {
 
 /* Information */
 
+.info-content {
+    background-color: #F9FAF8;
+}
+
 .info-header {
     font-size: 26px;
     color: #1F2937;
@@ -131,7 +124,7 @@ body {
 
 /* Quote */
 
-.quote-section {
+.quote-content {
     background-color: #E5E7EB;
 }
 
@@ -150,6 +143,10 @@ body {
 }
 
 /* Call To Action */
+
+.call-content {
+    background-color: #F9FAF8;
+}
 
 .call-box {
     background-color: #3882F6;
@@ -173,9 +170,9 @@ body {
 
 /* Footer */
 
-.footer-section {
-    margin-top: auto;
+.footer-content {
     text-align: center;
+    padding: 10px;
     background-color: #1F2937;
     color: #F9FAF8;
     font-family: "Rubik", "Roboto", sans-serif;
@@ -183,15 +180,36 @@ body {
 
 /* More Styles */
 
-.header-section,
-.footer-section {
-    padding: 0 200px;
+.header-content,
+.footer-content {
+    padding: 0 80px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.hero-section,
-.info-section,
-.quote-section,
-.call-section {
-    padding: 80px 200px;
+.hero-content,
+.info-content,
+.quote-content,
+.call-content {
+    padding: 80px 80px;
     gap: 40px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-section,
+.hero-section,
+.footer-section {
+    background-color: #1F2937;
+}
+
+.info-section,
+.call-section {
+    background-color: #F9FAF8;
+}
+
+.quote-section {
+    background-color: #E5E7EB;
 }
